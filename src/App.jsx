@@ -1,27 +1,35 @@
+// import { Alert } from "./components/Alert/Alert";
+// import { Alert2 } from "./components/Alert/Alert2";
+// import { Animals } from "./components/Animals/Animals";
+// import { Badge } from "./components/Badge/Badge";
+// import { Blog } from "./components/Blog/Blog";
+// import { Card } from "./components/Card/Card";
+import { Accordion } from "./components/Accordion/Accordion";
+import { Accordion2 } from "./components/Accordion2/Accordion2";
+import { Counter } from "./components/Counter/Counter";
 
-import { Recipe } from './components/  Recipe/Recipe';
-import { Alert } from './components/Alert/Alert';
-import { Alert2 } from './components/Alert/Alert2';
-import { Animals } from './components/Animals/Animals';
-import { Badge } from './components/Badge/Badge';
-import { Blog } from './components/Blog/Blog';
-import { Card } from './components/Card/Card';
-import { Jumbotron } from './components/Jumbotron/Jumbotron';
-import { Navigation } from './components/Navigation/Navigation';
-import { Numbers } from './components/Numbers/Numbers';
-import { Object } from './components/Object/Object';
-import { People } from './components/People/People';
-import { Planets } from './components/Planets/Planets';
-import { Post } from './components/Post/Post';
-import { Pricecard } from './components/Pricecard/Pricecard';
-import { Progress } from './components/Progress/Progress';
-import './global.css';
+import { Demo } from "./components/Demo/Demo";
+import { NameForm } from "./components/NameForm/NameForm";
+// import { Jumbotron } from "./components/Jumbotron/Jumbotron";
+// import { Navigation } from "./components/Navigation/Navigation";
+// import { Numbers } from "./components/Numbers/Numbers";
+// import { Object } from "./components/Object/Object";
+// import { People } from "./components/People/People";
+// import { Planets } from "./components/Planets/Planets";
+// import { Post } from "./components/Post/Post";
+// import { Pricecard } from "./components/Pricecard/Pricecard";
+import { Progress } from "./components/Progress/Progress";
+import { SayHello } from "./components/SayHello/SayHello";
+import { TextAlign } from "./components/TextAlign/TextAlign";
+import { TextToggle } from "./components/TextToggle/TextToggle";
+import { TextToggle2 } from "./components/TextToggle2/TextToggle2";
+import "./global.css";
+
 
 function App() {
-  
   return (
     <>
-      <Card
+      {/* <Card
         title="Bob Dylan"
         article="Bob Dylan (born Robert Allen Zimmerman, May 24, 1941) is an American
       singer/songwriter, author, and artist who has been an influential figure
@@ -54,10 +62,6 @@ function App() {
         green shorts with pockets, 100% cotton, 15% discount!
       </Pricecard>
       <Blog />
-      <Recipe>{["tomatoes", "cucumber", "onion", "olives", "feta"]}</Recipe>
-      <Recipe>
-        {["chickpeas", "olive oil", "garlic cloves", "lemon", "tahini"]}
-      </Recipe>
       <People
         ppl={["Bob Dust", "Fredy Mercury", "Shazam Nikola", "Wilibin Walabam"]}
       ></People>
@@ -67,8 +71,17 @@ function App() {
       <Alert2 title="OMG!" show={true}>
         Something really bad has happended!
       </Alert2>
-      <Navigation />
+      <Navigation /> */}
       <Progress min={0} max={100} value={10} />
+      <Demo />
+      <TextAlign />
+      <SayHello name={"Юра"} />
+      <TextToggle />
+      <TextToggle2 />
+      <Counter />
+      <NameForm />
+      <Accordion />
+      <Accordion2 />
     </>
   );
 }

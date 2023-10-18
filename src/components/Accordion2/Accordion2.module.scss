@@ -1,0 +1,23 @@
+.accordion__container {
+ 
+}
+.title.show  {    
+
+}
+.title__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  background: #a17979;
+}
+.text {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}
+.text.show {
+  height: auto;
+  max-height: 600px;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+  overflow: visible;
+}
